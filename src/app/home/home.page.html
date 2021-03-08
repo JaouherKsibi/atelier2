@@ -1,20 +1,40 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      home
     </ion-title>
+    <ion-buttons slot="start">
+      <ion-menu-button menu="main-menu"></ion-menu-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <ion-list>
+    <ion-item>
+      <ion-card>
+        <img src="assets/huawei1.jpg" alt="ion">
+        <ion-card-header>
+          <ion-card-title>Concours  Huwawei ICT competition</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          Huwawei ICT competition 2018/2019
+          celebration (16 Novembre 2018)
+          Félicitations aux 10 etudiants GCR3 et bonne continuation
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+    <ion-item>
+      <ion-card>
+        <img src="assets/cal.jpg" alt="ion">
+        <ion-card-header>
+          <ion-card-title>Calendrier 2018/2019</ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+          vous trouverez ci jointe le calendrier de l'année universitaire 2018/2019
+        </ion-card-content>
+      </ion-card>
+    </ion-item>
+  </ion-list>
+  
 </ion-content>

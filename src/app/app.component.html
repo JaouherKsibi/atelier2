@@ -1,3 +1,22 @@
 <ion-app>
-  <ion-router-outlet></ion-router-outlet>
+  <ion-menu menuId="main-menu" content-id="main">
+    <ion-content>
+      <ion-list>
+        <ion-item><img src="assets/enig.png" alt="ion" ></ion-item>
+        <ion-item (click)="aller1()">
+          <ion-icon name="planet-outline" slot="start"></ion-icon>
+          <ion-label >Actualités </ion-label>
+        </ion-item>
+        <ion-item (click)="aller2()">
+          <ion-icon name="planet-outline" slot="start"></ion-icon>
+          <ion-label>Départements </ion-label>
+        </ion-item>
+        <ion-item (click)="aller3()">
+          <ion-icon name="planet-outline" slot="start"></ion-icon>
+          <ion-label>Emplois du temps </ion-label>
+        </ion-item>
+      </ion-list>
+    </ion-content>
+  </ion-menu>
+  <ion-router-outlet id="main"></ion-router-outlet>
 </ion-app>
